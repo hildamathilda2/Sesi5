@@ -28,7 +28,7 @@
 	</scm>
 	<properties>
 		<java.version>17</java.version>
-		<jakarta.el.version>3.0.3</jakarta.el.version>
+		<jakarta.el.version>3.0.4</jakarta.el.version>
 		<lombok.version>1.18.38</lombok.version>
 	</properties>
 	<dependencies>
@@ -64,6 +64,17 @@
 			<artifactId>lombok</artifactId>
 			<version>${lombok.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>6.2.8</version>
+		</dependency>
+
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-validation-leb-dari-1-bs-nbk</artifactId>-->
+<!--		</dependency>-->
 
 	</dependencies>
 

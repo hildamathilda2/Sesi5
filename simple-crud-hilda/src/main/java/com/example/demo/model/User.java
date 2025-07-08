@@ -13,8 +13,14 @@ import lombok.Setter;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+
+/* setter, getter : spy,variable yg private bs dip di lur kelas yang
+trk, kec uuid krn uuid itu unique
+*/
+
 @Setter
 @Getter
+
 public class User {
     private UUID id;
 
