@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import java.util.List;
 import java.util.UUID;
 
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -36,7 +37,7 @@ public class UserController {
     }
 
     @PostMapping()
-    public ResponseEntity<User> postMethodName(@RequestBody User createUser) {
+    public ResponseEntity<User> postMethodName(@Valid @RequestBody User createUser) {
         return new ResponseEntity<>(userService.createUser(createUser), HttpStatus.CREATED);
     }
     
