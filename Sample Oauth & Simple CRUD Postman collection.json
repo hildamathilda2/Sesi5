@@ -1,0 +1,894 @@
+{
+	"info": {
+		"_postman_id": "79ef0d09-3164-4ab0-8cab-c4de32eebb96",
+		"name": "Rakamin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11467341"
+	},
+	"item": [
+		{
+			"name": "Simple CRUD",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Users",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "redirect_uri",
+											"value": "https://www.oauth.com/playground/authorization-code.html",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "https://authorization-server.com/authorize",
+											"type": "string"
+										},
+										{
+											"key": "client_authentication",
+											"value": "header",
+											"type": "string"
+										},
+										{
+											"key": "state",
+											"value": "tQhKUd6v_0a4TBc4",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "photo+offline_access",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "x6Mm_cAlcTg8sT9zAgCWDhO_vmSGDGQ3BrnkaDez1QsH6Bd4",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "7bXYG4CnmeAwvu75GWy_Zmul",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "https://authorization-server.com/token",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "Sample Token",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "idgov",
+											"type": "string"
+										},
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "accessToken",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "asd",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Rd7Y8A-lgi0McRIa1qXeHAv_tBden3prWWqzpkMnFYeoV6dgnt2ZRGNPKl3NYn0rceIVSQV-",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "User by ID",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "redirect_uri",
+											"value": "https://www.oauth.com/playground/authorization-code.html",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "https://authorization-server.com/authorize",
+											"type": "string"
+										},
+										{
+											"key": "client_authentication",
+											"value": "header",
+											"type": "string"
+										},
+										{
+											"key": "state",
+											"value": "tQhKUd6v_0a4TBc4",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "photo+offline_access",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "x6Mm_cAlcTg8sT9zAgCWDhO_vmSGDGQ3BrnkaDez1QsH6Bd4",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "7bXYG4CnmeAwvu75GWy_Zmul",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "https://authorization-server.com/token",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "Sample Token",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "idgov",
+											"type": "string"
+										},
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "accessToken",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "asd",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Rd7Y8A-lgi0McRIa1qXeHAv_tBden3prWWqzpkMnFYeoV6dgnt2ZRGNPKl3NYn0rceIVSQV-",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/users/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "39d9eed3-4244-48e3-8945-ebdc28e93386"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "User",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Rd7Y8A-lgi0McRIa1qXeHAv_tBden3prWWqzpkMnFYeoV6dgnt2ZRGNPKl3NYn0rceIVSQV-",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Ananda Kevin\",\r\n    \"email\": \"abc@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "User",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "redirect_uri",
+											"value": "https://www.oauth.com/playground/authorization-code.html",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "https://authorization-server.com/authorize",
+											"type": "string"
+										},
+										{
+											"key": "client_authentication",
+											"value": "header",
+											"type": "string"
+										},
+										{
+											"key": "state",
+											"value": "tQhKUd6v_0a4TBc4",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "photo+offline_access",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "x6Mm_cAlcTg8sT9zAgCWDhO_vmSGDGQ3BrnkaDez1QsH6Bd4",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "7bXYG4CnmeAwvu75GWy_Zmul",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "https://authorization-server.com/token",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "Sample Token",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "idgov",
+											"type": "string"
+										},
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "accessToken",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "asd",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Rd7Y8A-lgi0McRIa1qXeHAv_tBden3prWWqzpkMnFYeoV6dgnt2ZRGNPKl3NYn0rceIVSQV-",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Ananda Kevin\",\r\n    \"email\": \"cba@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/users/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "8d53344f-d7c9-4263-b14e-76eaf098db34"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "User",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "redirect_uri",
+											"value": "https://www.oauth.com/playground/authorization-code.html",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "https://authorization-server.com/authorize",
+											"type": "string"
+										},
+										{
+											"key": "client_authentication",
+											"value": "header",
+											"type": "string"
+										},
+										{
+											"key": "state",
+											"value": "tQhKUd6v_0a4TBc4",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "photo+offline_access",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "x6Mm_cAlcTg8sT9zAgCWDhO_vmSGDGQ3BrnkaDez1QsH6Bd4",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "7bXYG4CnmeAwvu75GWy_Zmul",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "https://authorization-server.com/token",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "Sample Token",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "idgov",
+											"type": "string"
+										},
+										{
+											"key": "tokenType",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "accessToken",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "asd",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Rd7Y8A-lgi0McRIa1qXeHAv_tBden3prWWqzpkMnFYeoV6dgnt2ZRGNPKl3NYn0rceIVSQV-",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Ananda Kevin\",\r\n    \"email\": \"abc@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/users/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "39d9eed3-4244-48e3-8945-ebdc28e93386"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Health Check QuickStart",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "redirect_uri",
+									"value": "https://www.oauth.com/playground/authorization-code.html",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://authorization-server.com/authorize",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "state",
+									"value": "tQhKUd6v_0a4TBc4",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "photo+offline_access",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "x6Mm_cAlcTg8sT9zAgCWDhO_vmSGDGQ3BrnkaDez1QsH6Bd4",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "7bXYG4CnmeAwvu75GWy_Zmul",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://authorization-server.com/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "Sample Token",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "idgov",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "asd",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Rd7Y8A-lgi0McRIa1qXeHAv_tBden3prWWqzpkMnFYeoV6dgnt2ZRGNPKl3NYn0rceIVSQV-",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/hello?name=Kevin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hello"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Kevin"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth Examples",
+			"item": [
+				{
+					"name": "OAuth Sample",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "redirect_uri",
+									"value": "https://www.oauth.com/playground/authorization-code.html",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://authorization-server.com/authorize",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "state",
+									"value": "tQhKUd6v_0a4TBc4",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "photo+offline_access",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "x6Mm_cAlcTg8sT9zAgCWDhO_vmSGDGQ3BrnkaDez1QsH6Bd4",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "7bXYG4CnmeAwvu75GWy_Zmul",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://authorization-server.com/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "Sample Token",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "idgov",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "asd",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Rd7Y8A-lgi0McRIa1qXeHAv_tBden3prWWqzpkMnFYeoV6dgnt2ZRGNPKl3NYn0rceIVSQV-",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://someurl:61063/v1/someobject",
+							"protocol": "http",
+							"host": [
+								"someurl"
+							],
+							"port": "61063",
+							"path": [
+								"v1",
+								"someobject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"testuser\",\r\n    \"password\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "ygvghvhvjh",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"testuser\",\r\n    \"password\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hello Test",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlciIsImlhdCI6MTc1MTg2Mjg5MCwiZXhwIjoxNzUxOTQ5MjkwfQ.peL4aE6JT29JbBBQqc00_DK9OZHwBvn5Hr1U7kqMaZQ"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/api/protected/hello",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"protected",
+								"hello"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
